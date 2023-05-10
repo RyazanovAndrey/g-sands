@@ -119,9 +119,8 @@ body {
 }
 
 .header {
-  background-image: linear-gradient(90deg, #342B28 18.26%, rgba(52, 43, 40, 0) 57.53%), linear-gradient(180deg, #342B28 9.38%, rgba(51, 39, 35, 0.57) 53.12%, #342B28 92.19%), url(../../img/bg-image.jpg);
-  -o-object-fit: cover;
-     object-fit: cover;
+  background-image: linear-gradient(90deg, #342B28 18.26%, rgba(52, 43, 40, 0) 57.53%), linear-gradient(180deg, #342B28 9.38%, rgba(51, 39, 35, 0.57) 53.12%, #342B28 92.19%), url(../../../img/bg-image.jpg);
+  background-position: center;
   min-height: 860px;
 }
 .header__nav {
