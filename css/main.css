@@ -112,6 +112,12 @@ body {
   margin: 0 auto;
 }
 
+.title {
+  font-size: 38px;
+  color: #F0B731;
+  font-weight: 700;
+}
+
 .header {
   background-image: linear-gradient(90deg, #342B28 18.26%, rgba(52, 43, 40, 0) 57.53%), linear-gradient(180deg, #342B28 9.38%, rgba(51, 39, 35, 0.57) 53.12%, #342B28 92.19%), url(../../img/bg-image.jpg);
   -o-object-fit: cover;
@@ -149,6 +155,7 @@ body {
   -moz-column-gap: 20px;
        column-gap: 20px;
 }
+
 .menu {
   display: flex;
   -moz-column-gap: 70px;
@@ -172,4 +179,110 @@ body {
 }
 .menu__link:hover::after {
   opacity: 1;
+}
+
+.advantages {
+  padding-top: 50px;
+}
+.advantages__row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.advantages__col {
+  flex: 0 1 50%;
+  padding-top: 35px;
+  padding-bottom: 50px;
+}
+.advantages__col:nth-child(1) {
+  border-right: 1px dashed #5C4D48;
+  border-bottom: 1px dashed #5C4D48;
+}
+.advantages__col:nth-child(2) {
+  border-bottom: 1px dashed #5C4D48;
+  padding-left: 20px;
+}
+.advantages__col:nth-child(3) {
+  border-right: 1px dashed #5C4D48;
+}
+.advantages__col:nth-child(4) {
+  padding-left: 20px;
+}
+.advantages__title {
+  font-size: 20px;
+  color: #F0B731;
+  margin: 26px 0;
+}
+.advantages__text {
+  width: 430px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.apartment {
+  margin-top: 200px;
+}
+.apartment__title {
+  width: 100%;
+  padding-bottom: 20px;
+  border-bottom: 1px dashed #5C4D48;
+}
+.apartment__row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 30px;
+  margin-top: 60px;
+}
+.apartment__card {
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+.apartment__card img {
+  transition: 0.5s;
+}
+.apartment__card::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(360deg, #342B28 10.42%, rgba(92, 77, 72, 0) 100%);
+}
+.apartment__card::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  border: 1px solid #F0B731;
+  opacity: 0;
+  transition: 0.5s;
+}
+.apartment__card:hover::after {
+  opacity: 1;
+}
+.apartment__card:hover img {
+  transform: scale(1.1);
+}
+.apartment__box {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+}
+.apartment__head {
+  font-size: 28px;
+  color: #F0B731;
+}
+.apartment__text {
+  font-size: 20px;
+  font-weight: 700;
+}
+.apartment__square {
+  font-size: 48px;
+  font-weight: 700;
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
 }/*# sourceMappingURL=main.css.map */

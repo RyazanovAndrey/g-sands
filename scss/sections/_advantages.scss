@@ -1,0 +1,51 @@
+.advantages {
+
+    padding-top: 50px;
+
+    &__row {
+
+        display: flex;flex-wrap: wrap;
+    }
+
+    &__col {
+
+        flex: 0 1 50%;
+        padding-top: 35px;
+        padding-bottom: 50px;
+        
+    }
+
+    &__col:nth-child(1){
+        border-right: 1px dashed #5C4D48;
+        border-bottom: 1px dashed #5C4D48;
+    }
+
+    &__col:nth-child(2){
+        border-bottom: 1px dashed #5C4D48;
+        padding-left: 20px;
+    }
+
+    &__col:nth-child(3){
+        border-right: 1px dashed #5C4D48;
+
+    }
+
+    &__col:nth-child(4){
+        padding-left: 20px;
+    }
+
+    &__img {
+    }
+
+    &__title {
+        font-size: 20px;
+        color: $color-1;
+        margin: 26px 0;
+    }
+
+    &__text {
+        width: 430px;
+        font-size: 16px;
+        font-weight: 400;
+    }
+}
