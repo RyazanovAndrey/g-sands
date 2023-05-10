@@ -1,0 +1,44 @@
+.show-rooms {
+
+    background-image: linear-gradient(180deg, #342B28 9.38%, rgba(51, 39, 35, 0.75) 53.12%, #342B28 92.19%),
+    url(../../img/bg-show.jpg);
+    min-height: 500px;
+    padding-top: 140px;
+
+    &__row {
+        display: flex;
+        column-gap: 75px;
+    }
+
+    &__col * + * {
+        margin-top: 20px;
+    }
+
+    &__title {
+        margin-bottom: 80px;
+    }
+
+    &__text {
+    }
+
+    &__field {
+        width: 570px;
+        height: 50px;
+        background-color: #92807A;
+        text-align: center;
+
+        &::placeholder{
+            color: #ECC75A;
+            font-size: 20px;
+        }
+    }
+
+    &__btn {
+        width: 100%;
+        background-color: $color-1;
+        height: 50px;
+        color: #11161F;
+        font-weight: 400;
+        font-size: 20px;
+    }
+}
