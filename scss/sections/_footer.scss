@@ -1,0 +1,32 @@
+.footer {
+
+    background-color: #2D2522;
+    min-height: 230px;
+    display: flex;
+    align-items: center;
+
+    &__row {
+        display: flex;
+        column-gap: 40px;
+    }
+
+    &__col {
+        line-height: 35px;
+    }
+
+    &__nav {
+    }
+
+    &__link {
+        color: $color-3;
+        line-height: 35px;
+    }
+
+    &__social {
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+    }
+}
+.container {
+}

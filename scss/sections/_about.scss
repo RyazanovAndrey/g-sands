@@ -1,11 +1,14 @@
 .about {
 
     &__row {
-        display: flex;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
         align-items: center;
     }
 
-    &__col {}
+    &__col:nth-child(1) {
+        margin-right: 30px;
+    }
 
     &__title {}
 
@@ -16,10 +19,7 @@
     &__video {
         position: relative;
         display: block;
-
     }
-
-
 
     &__video::before {
         position: absolute;
@@ -34,8 +34,6 @@
         background-color: rgba(0, 0, 0, 0.3);
     }
 
-    &__video-img {}
-
     &__btn-play {
         position: absolute;
         top: 50%;
@@ -43,9 +41,8 @@
         transform: translate(-50%, -50%);
         transition: 0.3s;
     }
-}
 
-.about__video:hover .about__btn-play{
-    transform: translate(-50%, -50%) scale(1.1) ;
-
+    &__btn-play:hover{
+        transform: translate(-50%, -50%) scale(1.1);
+    }
 }
