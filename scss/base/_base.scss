@@ -1,8 +1,10 @@
 @import url(https://fonts.googleapis.com/css?family=Comfortaa:300,regular,500,600,700);
 
 body{
-    font-family: 'Comfortaa';
+    font-family: $ff1;
+    color: $color-3;
     font-weight: 400;
+    background-color: $color-2;
 }
 
 .container{
