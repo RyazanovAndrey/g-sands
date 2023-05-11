@@ -1,8 +1,9 @@
-const headerNav = document.querySelector('.header__nav');
+const menu = document.querySelector('.menu');
 const burger = document.querySelector('.burger');
+const body = document.body;
 
 burger.addEventListener('click', ()=> {
-    document.body.style.overflow = 'hidden'
+    body.classList.toggle('stop');
     burger.classList.toggle('active');
-    headerNav.classList.toggle('header__nav-mobile');
+    menu.classList.toggle('active');
 })

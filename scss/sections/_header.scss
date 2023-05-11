@@ -15,30 +15,6 @@
 
     }
 
-    &__nav-mobile {
-        position: fixed;
-        background: red;
-        top: 0;
-        width: 100%;
-        height: 100vh;
-        left: 0;
-        margin-top: 0;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-
-        .menu {
-            margin-top: 50px;
-            display: flex;
-            flex-direction: column;
-            row-gap: 50px
-        }
-
-        .header__logo {
-            margin-left: 70px;
-        }
-    }
-
 
     &__offer {
         margin-top: 310px;
@@ -75,9 +51,33 @@
     display: flex;
     column-gap: 70px;
 
-    @include mediaTablet {
+    &__logo-mobile{
         display: none;
     }
+
+    @include mediaTablet{
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100vh;
+        background-color: #838383;
+        row-gap: 50px;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        transition: 0.3s;
+
+        &__logo-mobile{
+            display: block;
+        }
+
+        &.active{
+            left: 0;
+        }
+    }
+
+
 
 
     &__link {
