@@ -4,9 +4,14 @@
 @import './base/base';
 
 @import './sections/header';
+@import './sections/burger';
 @import './sections/advantages';
 @import './sections/apartment';
 @import './sections/show-rooms';
 @import './sections/about';
 @import './sections/map';
 @import './sections/footer';
+
+.hidden {
+    display: none;
+}

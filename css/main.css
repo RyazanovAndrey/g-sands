@@ -129,6 +129,27 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+.header__nav-mobile {
+  position: fixed;
+  background: red;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  left: 0;
+  margin-top: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.header__nav-mobile .menu {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 50px;
+}
+.header__nav-mobile .header__logo {
+  margin-left: 70px;
+}
 .header__offer {
   margin-top: 310px;
   width: 675px;
@@ -155,37 +176,15 @@ body {
        column-gap: 20px;
 }
 
-.burger {
-  position: relative;
-  width: 30px;
-  height: 30px;
-  display: block;
-  cursor: pointer;
-  display: none;
-}
-@media (max-width: 992px) {
-  .burger {
-    display: block;
-  }
-}
-.burger span {
-  position: absolute;
-  width: 100%;
-  height: 4px;
-  background-color: #fff;
-  top: calc(50% - 2px);
-}
-.burger span:first-child {
-  transform: translateY(10px);
-}
-.burger span:last-child {
-  transform: translateY(-10px);
-}
-
 .menu {
   display: flex;
   -moz-column-gap: 70px;
        column-gap: 70px;
+}
+@media (max-width: 992px) {
+  .menu {
+    display: none;
+  }
 }
 .menu__link {
   color: #fff;
@@ -207,12 +206,51 @@ body {
   opacity: 1;
 }
 
+.burger {
+  position: fixed;
+  width: 40px;
+  height: 50px;
+  cursor: pointer;
+  display: none;
+  top: 20px;
+  right: 20px;
+}
+@media (max-width: 992px) {
+  .burger {
+    display: block;
+  }
+}
+.burger span {
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background-color: #fff;
+  top: calc(50% - 2px);
+  border-radius: 20px;
+  transition: 0.3s;
+}
+.burger span:first-child {
+  transform: translateY(15px);
+}
+.burger span:last-child {
+  transform: translateY(-15px);
+}
+.burger.active span:first-child {
+  transform: translateY(0) rotate(45deg);
+}
+.burger.active span:last-child {
+  transform: translateY(0) rotate(-45deg);
+}
+.burger.active span {
+  transform: scale(0);
+}
+
 .advantages {
   padding-top: 50px;
 }
 .advantages__row {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
 .advantages__col {
   flex: 0 1 50%;
@@ -424,4 +462,8 @@ body {
   margin-top: 20px;
   display: flex;
   align-items: center;
+}
+
+.hidden {
+  display: none;
 }/*# sourceMappingURL=main.css.map */
