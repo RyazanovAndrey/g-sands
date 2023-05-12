@@ -2,6 +2,10 @@
 
     padding-bottom: 80px;
 
+     @include mediaTablet{
+            margin-top: 100px;
+        }
+
     &__title {
         width: 100%;
         border-bottom: 1px dashed #5C4D48;

@@ -2,12 +2,14 @@
 
     background-image: linear-gradient(180deg, #342B28 9.38%, rgba(51, 39, 35, 0.75) 53.12%, #342B28 92.19%),
     url(../img/bg-show.jpg);
+    object-fit: cover;
     min-height: 500px;
-    padding-top: 140px;
+    padding: 140px 0;
 
     &__row {
-        display: flex;
-        column-gap: 75px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(390px, 1fr));
+        grid-gap: 75px;
     }
 
     &__col * + * {
@@ -22,7 +24,7 @@
     }
 
     &__field {
-        width: 570px;
+        width: 100%;
         height: 50px;
         background-color: #92807A;
         text-align: center;

@@ -2,7 +2,7 @@
 
     &__row {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(auto-fit, minmax(390px, 1fr));
         align-items: center;
     }
 
@@ -19,6 +19,11 @@
     &__video {
         position: relative;
         display: block;
+
+         @include mediaTablet{
+                margin-top: 100px;
+            }
+
     }
 
     &__video::before {
