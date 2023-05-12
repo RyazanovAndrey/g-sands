@@ -16,3 +16,14 @@ menu.addEventListener('click', (e)=> {
     }
 });
 
+
+
+mask('[data-tel]');
+
+const phoneInput = document.querySelector('[data-tel]');
+
+phoneInput.addEventListener('blur', ()=> {
+    if(phoneInput.value == '+'){
+        phoneInput.value = ''
+     }
+})

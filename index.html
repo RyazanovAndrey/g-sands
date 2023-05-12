@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="js/lightbox/youtubeLightbox.css">
     <link rel="shortcut icon" href="img/favicon.svg" type="image/x-icon">
     <title>Золоті Піски - Житловий комплекс</title>
 </head>
@@ -141,7 +142,7 @@
                     </div>
                     <div class="show-rooms__col">
                         <input type="text" placeholder="Ваше ім'я" class="show-rooms__field">
-                        <input type="text" placeholder="Ваш телефон" class="show-rooms__field">
+                        <input type="text" placeholder="+38 067 000 00 00" class="show-rooms__field phone-input" data-tel>
                         <button class="show-rooms__btn">Передзвонити мені</button>
                     </div>
                 </div>
@@ -157,7 +158,7 @@
                             eius quidem animi enim iusto, deleniti alias doloremque veniam maxime?</div>
                     </div>
                     <div class="about__col">
-                        <a href="" class="about__video">
+                        <a href="https://youtu.be/dbLXGGwUEkk" data-youtubeLightbox class="about__video">
                             <img src="img/video-img.jpg" alt="" class="about__video-img">
                             <img src="img/btn-video-play.svg" alt="" class="about__btn-play">
                         </a>
@@ -205,6 +206,17 @@
         </div>
     </footer>
 
+    <div id="youtubelightbox" class="youtubelightbox">
+        <div class="youtubelightbox__centeredchild">
+            <div class="youtubelightbox__videowrapper">
+                <div class="youtubelightboxPlayer"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/mask/mask.js"></script>
+    <script src="js/mask/mask_list.js"></script>
+    <script src="js/lightbox/youtubeLightbox.js"></script>
     <script src="js/main.js"></script>
 
 </body>

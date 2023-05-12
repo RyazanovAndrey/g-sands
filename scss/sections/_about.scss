@@ -2,6 +2,7 @@
 
     &__row {
         display: grid;
+        grid-gap: 70px;
         grid-template-columns: repeat(auto-fit, minmax(390px, 1fr));
         align-items: center;
     }
