@@ -14,12 +14,19 @@
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 30px;
         margin-top: 60px;
+
+        @include mediaTablet{
+            grid-template-columns: 1fr;
+        }
+
     }
 
     &__card {
         position: relative;
         cursor: pointer;
         overflow: hidden;
+        max-width: 570px;
+
 
         & img{
             transition: 0.5s;
@@ -73,10 +80,11 @@
     }
 
     &__square {
+        position: absolute;
         font-size: 48px;
         font-weight: 700;
-        position: absolute;
         right: 20px;
         bottom: 20px;
+
     }
 }

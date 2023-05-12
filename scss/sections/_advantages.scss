@@ -6,33 +6,43 @@
 
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+
+        @include mediaTablet{
+            grid-template-columns: 1fr;
+
+        }
+
     }
 
-    &__col {
 
-        flex: 0 1 50%;
+    &__col {
         padding-top: 35px;
         padding-bottom: 50px;
+        padding-left: 25px;
         
     }
 
     &__col:nth-child(1){
         border-right: 1px dashed #5C4D48;
         border-bottom: 1px dashed #5C4D48;
+
+        @include mediaTablet{
+            border-right:0
+        }
     }
 
     &__col:nth-child(2){
         border-bottom: 1px dashed #5C4D48;
-        padding-left: 20px;
     }
 
     &__col:nth-child(3){
         border-right: 1px dashed #5C4D48;
 
-    }
+        @include mediaTablet{
+            border-right: 0;
+            border-bottom: 1px dashed #5C4D48;
+        }
 
-    &__col:nth-child(4){
-        padding-left: 20px;
     }
 
     &__img {

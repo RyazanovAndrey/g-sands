@@ -7,3 +7,12 @@ burger.addEventListener('click', ()=> {
     burger.classList.toggle('active');
     menu.classList.toggle('active');
 })
+
+menu.addEventListener('click', (e)=> {
+    if(e.target == menu){
+        menu.classList.remove('active');
+        burger.classList.remove('active');
+        body.classList.remove('stop');
+    }
+});
+

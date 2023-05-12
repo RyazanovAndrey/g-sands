@@ -170,7 +170,7 @@ body {
     left: -100%;
     width: 100%;
     height: 100vh;
-    background-color: #838383;
+    background-color: #342B28;
     row-gap: 50px;
     justify-content: center;
     align-items: center;
@@ -205,7 +205,7 @@ body {
 }
 
 .burger {
-  position: fixed;
+  position: absolute;
   width: 40px;
   height: 50px;
   cursor: pointer;
@@ -250,24 +250,36 @@ body {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
+@media (max-width: 992px) {
+  .advantages__row {
+    grid-template-columns: 1fr;
+  }
+}
 .advantages__col {
-  flex: 0 1 50%;
   padding-top: 35px;
   padding-bottom: 50px;
+  padding-left: 25px;
 }
 .advantages__col:nth-child(1) {
   border-right: 1px dashed #5C4D48;
   border-bottom: 1px dashed #5C4D48;
 }
+@media (max-width: 992px) {
+  .advantages__col:nth-child(1) {
+    border-right: 0;
+  }
+}
 .advantages__col:nth-child(2) {
   border-bottom: 1px dashed #5C4D48;
-  padding-left: 20px;
 }
 .advantages__col:nth-child(3) {
   border-right: 1px dashed #5C4D48;
 }
-.advantages__col:nth-child(4) {
-  padding-left: 20px;
+@media (max-width: 992px) {
+  .advantages__col:nth-child(3) {
+    border-right: 0;
+    border-bottom: 1px dashed #5C4D48;
+  }
 }
 .advantages__title {
   font-size: 20px;
@@ -295,10 +307,16 @@ body {
   grid-gap: 30px;
   margin-top: 60px;
 }
+@media (max-width: 992px) {
+  .apartment__row {
+    grid-template-columns: 1fr;
+  }
+}
 .apartment__card {
   position: relative;
   cursor: pointer;
   overflow: hidden;
+  max-width: 570px;
 }
 .apartment__card img {
   transition: 0.5s;
@@ -343,9 +361,9 @@ body {
   font-weight: 700;
 }
 .apartment__square {
+  position: absolute;
   font-size: 48px;
   font-weight: 700;
-  position: absolute;
   right: 20px;
   bottom: 20px;
 }

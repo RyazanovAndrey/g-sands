@@ -61,7 +61,7 @@
         left: -100%;
         width: 100%;
         height: 100vh;
-        background-color: #838383;
+        background-color: $color-2;
         row-gap: 50px;
         justify-content: center;
         align-items: center;
@@ -76,9 +76,6 @@
             left: 0;
         }
     }
-
-
-
 
     &__link {
         color: $color-3;
